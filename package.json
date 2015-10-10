@@ -1,0 +1,17 @@
+{
+  "name": "rails-webpack",
+  "version": "1.0.0",
+  "description": "This a frontend react app served up by rails",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Schram",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
+}
