@@ -44,12 +44,14 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(157);
 	var App = __webpack_require__(158);
+	var root = document.getElementById("content");
 
-	ReactDOM.render(React.createElement(App, {}, null), document.getElementById("content"));
-
+	ReactDOM.render(React.createElement(App, null), root);
 
 /***/ },
 /* 1 */
@@ -19602,14 +19604,21 @@
 /* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+
 	var React = __webpack_require__(1);
 
 	module.exports = React.createClass({
-	  render: function () {
-	    return React.createElement("div", {}, "Hello");
+	  displayName: "exports",
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      "Hello from React"
+	    );
 	  }
 	});
-
 
 /***/ }
 /******/ ]);
