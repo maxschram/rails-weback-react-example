@@ -45,9 +45,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var App = __webpack_require__(157);
+	var ReactDOM = __webpack_require__(157);
+	var App = __webpack_require__(158);
 
-	React.render(React.createElement(App, {}, null));
+	ReactDOM.render(React.createElement(App, {}, null), document.getElementById("content"));
 
 
 /***/ },
@@ -19592,11 +19593,20 @@
 /* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	module.exports = __webpack_require__(3);
+
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var React = __webpack_require__(1);
 
 	module.exports = React.createClass({
 	  render: function () {
-	    return "Hello";
+	    return React.createElement("div", {}, "Hello");
 	  }
 	});
 
