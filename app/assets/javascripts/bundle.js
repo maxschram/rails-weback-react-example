@@ -19609,9 +19609,9 @@
 	var React = __webpack_require__(1);
 
 	module.exports = React.createClass({
-	  displayName: "exports",
-
+	  displayName: 'App',
 	  render: function render() {
+	    debugger;
 	    return React.createElement(
 	      "div",
 	      null,
